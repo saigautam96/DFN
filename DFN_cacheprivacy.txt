@@ -1,0 +1,63 @@
+router
+
+#node   Comment     latitude  longitude
+A1      Attacker1      70       100 
+A2      Attacker2      40       20
+A3      Attacker3      20       30
+A4      
+A5
+C1      Consumer1      10       30
+C2      Consumer2      20       10        
+C3      
+C4      Consumer4      30       50
+C5      Consumer5      90       30
+C6      Consumer6      80       30
+R1      Router1        60       30
+R2      Router2        20       30
+R3      Router3        10       30
+R4      Router4        40       30
+R5      Router5        80       30
+R6      Router6        90       30
+R7      Router7        10       30
+R8      Router8        30       30
+R9      Router9        10       30
+R10     Router10       90       30
+R11     Router11       70       30
+P1      Producer1      20       45
+P2                     90       80
+
+link
+
+#srcNode  dstNode  bandwidth  metric  delay  queue        
+A1         R1       10Mbps     1       5ms    20
+A2         R3       10Mbps     1       5ms    20
+A3         R7       10Mbps     1       5ms    20
+A4         R10      10Mbps     1       5ms    20
+A5         R9       10Mbps     1       5ms    20       
+C1         R1       10Mbps     1       5ms    20
+C2         R3       10Mbps     1       5ms    20
+C3         R7       10Mbps     1       5ms    20
+C4         R10      10Mbps     1       5ms    20
+C5         R9       10Mbps     1       5ms    20
+C6         R3       10Mbps     1       5ms    20
+R1         R2       100Mbps    1       5ms    20
+R1         R8       100Mbps    1       5ms    20
+R1         R9       100Mbps    1       5ms    20
+R2         R4       1000Mbps   1       5ms    20
+R2         R5       100Mbps    1       5ms    20
+R3         R5       100Mbps    1       5ms    20
+R3         R6       100Mbps    1       5ms    20
+R3         R10      100Mbps    1       5ms    20
+R7         R5       100Mbps    1       5ms    20
+R10        R5       100Mbps    1       5ms    20
+R10        R6       100Mbps    1       5ms    20
+R10        R11      100Mbps    1       5ms    20
+R9         R6       100Mbps    1       5ms    20
+R9         R4       1000Mbps   1       5ms    20
+R5         R6       100Mbps    1       5ms    20
+R6         P2       1000Mbps   1       5ms    20
+R11        R8       100Mbps    1       5ms    20
+R6         R4       1000Mbps   1       5ms    20
+R8         R4       1000Mbps   1       5ms    20
+R4         P1       1000Mbps   1       5ms    20
+
